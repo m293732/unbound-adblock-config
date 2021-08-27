@@ -1,0 +1,6 @@
+[Unit]
+Description=Update dns blacklist used by unbound adblocker
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/update-unbound-blacklist.sh
