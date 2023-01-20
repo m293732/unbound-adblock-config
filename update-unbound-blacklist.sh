@@ -15,7 +15,7 @@ function get_domains {
 	declare -a ARR=( ${!1} )
 	for i in "${ARR[@]}"; do
 		curl -sw '\n' "$i"
-	done | sed 's/#.*//;/^$/d' | sort -u
+	done | sed 's/#.*//;/^$/d;s/\r//g' | sort -u
 }
 function convert_unbound {
 	while read domain; do
