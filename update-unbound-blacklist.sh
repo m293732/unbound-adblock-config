@@ -1,5 +1,5 @@
 #!/bin/bash
-BLACKLIST_FILE="/etc/unbound/unbound.conf.d/blacklist.conf"
+BLACKLIST_FILE="/etc/unbound/blacklist.conf"
 WHITELIST_FILE="/etc/unbound/whitelist"
 WHITELIST_URLS="
 	https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt
