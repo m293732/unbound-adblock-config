@@ -22,7 +22,7 @@ function convert_unbound {
 		printf 'local-zone: "%s" always_nxdomain\n' "$domain"
 	done
 }
-umask 644
+umask 0022
 printf '# Generated %s\n' "$(date)" > $WHITELIST_FILE
 get_domains "WHITELIST_URLS" >> $WHITELIST_FILE
 printf '# Generated %s\n' "$(date)" > $BLACKLIST_FILE
